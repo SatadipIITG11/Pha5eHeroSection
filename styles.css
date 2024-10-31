@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+header{
+    background-color: #212121;
+    color: white;
+    height: 70px;
+}
+
+
+.svg-text {
+    width: 81%; /* Adjust as needed */
+    /* max-height: 100vh;  */
+    pointer-events: none; /* Allows clicks to pass through */
+    z-index: 10;
+  }
+  
+  .text {
+    /* font-family: Arial, sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    stroke-width: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    fill: white; /* Final fill color of the text */
+    text-anchor: middle; /* Centers each line horizontally */
+  }
+  #hero
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .pop-up-image{
+    opacity: 0;
+    transform: scale(0);
+    animation: popUp 1s forwards ease-in-out;
+    /* animation-delay: 0.5s; */
+}
+.img1
+{
+  top: 110px;
+  left: 100px;
+  animation-delay: 0s;
+}
+.img2
+{
+  top: 110px;
+  left: 1100px;
+  animation-delay: 1s;
+}
+.img3
+{
+  top: 490px;
+  left: 100px;
+  animation-delay: 1.5s;
+}
+.img4
+{
+  top: 490px;
+  left: 1150px;
+  animation-delay: 0.5s;
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/* Outer container to handle movement area */
+.container {
+  width: 300px;
+  height: 200px;
+  /* margin: 100px auto; */
+  position: absolute;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 110px;
+  left: 150px;
+  animation-delay: 0s;
+  /* background-image: url("https://2022-pha5e-website-prod.s3.eu-west-3.amazonaws.com/assets/bigger-science_thumbnail-2.png"); */
+}
+
+/* Image holder with extra space for movement */
+.image-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* Allows image to move without clipping */
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.container1
+{
+  width: 300px;
+  height: 200px;
+  /* margin: 100px auto; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 110px;
+  left: 1100px;
+  animation-delay: 1s;
+}
+.container2
+{
+  width: 300px;
+  height: 200px;
+  /* margin: 100px auto; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 480px;
+  left: 100px;
+  animation-delay: 1.5s;
+}
+
+.container3
+{
+  width: 300px;
+  height: 200px;
+  /* margin: 100px auto; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 480px;
+  left: 1150px;
+  animation-delay: 0.5s;
+}
+
+
+.class-text{
+  position: relative;
+  z-index: 1;
+}
+#movableImage{
+  z-index: 0;
+}
+
+.big-text{
+  font-family: Area Normal, Helvetica, Arial, sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-weight: 800;
+  font-size:larger;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+#navbar
+{
+  display: flex;
+  align-items: center;
+}
+#navbar img{
+  margin-left: 30px;
+  cursor: pointer;
+}
+#navbar div{
+  margin-left: 50rem;
+}
+.nav-content{
+  width: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-content span{
+  font-family: Area Normal, Helvetica, Arial, sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+   font-size: larger;
+   cursor: pointer;
+}
